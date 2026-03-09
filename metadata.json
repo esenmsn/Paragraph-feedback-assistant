@@ -1,0 +1,5 @@
+{
+  "name": "Paragraph Feedback Assistant",
+  "description": "Evaluates student paragraphs based on a specific rubric and provides structured, encouraging feedback.",
+  "requestFramePermissions": []
+}
