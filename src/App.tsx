@@ -156,7 +156,9 @@ The student is asking for help to improve their writing based on the feedback.
 
 CRITICAL RULE FOR LANGUAGE: The student is learning English as a foreign language (EFL). You MUST use very simple, clear, and basic English vocabulary and short sentences. Avoid complex words, idioms, or advanced grammar. Write exactly at an ${level} reading level.
 
-CRITICAL RULE FOR GUIDANCE: DO NOT provide direct corrections, rewritten sentences, or full answers. Instead, provide simple guiding questions or hints that prompt the student to figure out the correction themselves. Keep your response brief and encouraging.`,
+CRITICAL RULE FOR GUIDANCE: DO NOT provide direct corrections, rewritten sentences, or full answers. Instead, provide simple guiding questions or hints that prompt the student to figure out the correction themselves. Keep your response brief and encouraging.
+
+FORMATTING RULE: Format your response using clear, separate paragraphs with line breaks between them to make it very easy to read.`,
         }
       });
 
@@ -399,7 +401,7 @@ CRITICAL RULE FOR GUIDANCE: DO NOT provide direct corrections, rewritten sentenc
                       <div className="space-y-4 max-h-80 overflow-y-auto p-2">
                         {chatHistory.map((msg, i) => (
                           <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                            <div className={`max-w-[85%] rounded-2xl px-4 py-2 text-sm ${
+                            <div className={`max-w-[85%] rounded-2xl px-4 py-2 text-sm whitespace-pre-wrap ${
                               msg.role === 'user' 
                                 ? 'bg-indigo-600 text-white rounded-br-sm' 
                                 : 'bg-slate-100 text-slate-800 rounded-bl-sm'
